@@ -1,0 +1,1 @@
+Airbnb JS Style Guide nin Türkçeleştirilmiş versiyonu. Esktra notlar içerir. 
