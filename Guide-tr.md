@@ -175,6 +175,7 @@ Diğer Stil Kılavuzları
 - [3.2](#es6-computed-properties) Dinamik bir nitelik oluşturmak istediğinizde, nitelik isimlerini bloklar içinde ([]) yazın.
 
   > Neden? Bu sizin nesnenizin tüm niteliklerini tek bir yerde tanımlamanıza imkan verir.
+  > Eğer içeriğimiz dinamik olarak değişecekse iyi olanı kullanmak daga iyidir.
 
   ```javascript
   function getKey(k) {
@@ -225,6 +226,7 @@ Diğer Stil Kılavuzları
 - [3.4](#es6-object-concise) Kısa nitelik - değer tekniğini kullanın. eslint: [`object-shorthand`](https://eslint.org/docs/rules/object-shorthand.html)
 
   > Neden? Çünkü, daha kısa ve açıklayıcı
+  > Bir objede property adı ile değerine gelecek olan değişkenin adı aynı ise tek olarak kullanmak daha iyidir. 
 
   ```javascript
   const lukeSkywalker = "Luke Skywalker";
@@ -275,13 +277,14 @@ Diğer Stil Kılavuzları
 
 - [3.6](#objects--quoted-props) Sadece geçerli olmayan tanımlamalarda tırnak kullanın. eslint: [`quote-props`](https://eslint.org/docs/rules/quote-props.html)
 
-  > Neden? Genellikle okuması kolay olarak düşünülür. Syntax vurgulamasını geliştirir ve ayrıca birçok JS motoru tarafından çok kolay bir şekilde optimize edilir.
+  > Neden? Genellikle okuması kolay olarak düşünülür. Syntax vurgulamasını geliştirir ve ayrıca birçok JS motoru tarafından çok kolay bir şekilde optimize edilir. 
+  > Bir obje içinde tanımlanan propertyler eğer birden fazla kelime olarak tanımlanmıyorsa "" tırnak kullanma
 
   ```javascript
   // kötü
   const bad = {
-    foo: 3,
-    bar: 4,
+    "foo": 3,
+    "bar": 4,
     "data-blah": 5,
   };
 

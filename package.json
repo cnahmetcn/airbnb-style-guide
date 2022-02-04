@@ -1,0 +1,24 @@
+{
+  "name": "airbnb-style-guide",
+  "version": "1.0.0",
+  "description": "Airbnb JS Style Guide nin Türkçeleştirilmiş versiyonu. Esktra notlar içerir.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cnahmetcn/airbnb-style-guide.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cnahmetcn/airbnb-style-guide/issues"
+  },
+  "homepage": "https://github.com/cnahmetcn/airbnb-style-guide#readme",
+  "devDependencies": {
+    "eslint": "^8.8.0"
+  }
+}
